@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html lang="en">
+<script>
+    window.INKY_PREVIEW = false; 
+</script>
+
+<head>
+    <!--the title of the web game and the css sheet used to style my page-->
+    <meta charset="utf-8">
+    <title>Nothing Can Go Wrong</title>
+    <!--adjust the web size and format based on the size of device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!--the class that contains button such as load, save, restart, and theme -->
+    <div class="outerContainer">
+        <h3 class="written-in-ink"><a href="https://www.inklestudios.com/ink">WRITTEN IN INK</a></h3>
+
+        <div id="controls" class="buttons">
+          <a id="rewind" title="Restart story from beginning">restart</a>
+          <a id="save" title="Save progress">save</a>
+          <a id="reload" title="Reload from save point">load</a>
+          <a id="theme-switch" title="Switch theme">theme</a>
+        </div>
+        <!-- here is where the story goes-->
+        <div id="story" class="container">
+            <div class="header">
+                <h1>Nothing Can Go Wrong</h1>
+                <h2 class="byline"></h2>
+            </div>
+        </div>
+    </div>
+    <!-- access ink.js so the Ink script can run -->
+    <script src="ink.js"></script>
+    <!-- untitled.js is the story script-->
+    <script src="Untitled.js"></script>
+    <!-- main.js is where it contais all the function needed for the game-->
+     <!--to allowed certain feature, such as refresh or display images, to work in the game-->
+    <script src="main.js"></script>
+</body>
+</html>
